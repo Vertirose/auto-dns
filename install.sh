@@ -35,3 +35,6 @@ cd
 systemctl restart bind9.service
 systemctl status bind9.service
 echo "Script execution completed."
+sleep 2
+echo "Running configuration testing."
+ping smkdki.net
