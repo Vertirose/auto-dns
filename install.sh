@@ -27,9 +27,10 @@ apt install bind9 dnsutils -y
 mv custom/ /etc/bind
 rm /etc/bind/named.conf.local
 rm /etc/bind/named.conf.options
-mv /etc/bind/custom/named.conf.local ../named.conf.local
-mv /etc/bind/custom/named.conf.options ../named.conf.options
+mv /etc/bind/custom/named.conf.local ../
+mv /etc/bind/custom/named.conf.options ../
 echo "Congratulations, the bind9 configuration is complete, just a few steps left."
-sleep 5
 echo "nameserver 192.168.1.100" > /etc/resolv.conf
+cd
+systemctl restart bind9.service
 echo "Script execution completed."
