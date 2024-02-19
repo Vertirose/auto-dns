@@ -33,4 +33,5 @@ echo "Congratulations, the bind9 configuration is complete, just a few steps lef
 echo "nameserver 192.168.1.100" > /etc/resolv.conf
 cd
 systemctl restart bind9.service
+systemctl status bind9.service
 echo "Script execution completed."
