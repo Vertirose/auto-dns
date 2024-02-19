@@ -8,10 +8,10 @@
 
 zone "smkdki.net" {
 	type master;
-	file "/etc/bind/db.contoh - add";
+	file "/etc/bind/custom/db.contoh";
 };
 
 zone "1.168.192.in-addr.arpa" {
 	type master;
-	file "/etc/bind/db.pointer - add";
+	file "/etc/bind/custom/db.pointer";
 };
