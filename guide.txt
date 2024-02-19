@@ -1,0 +1,5 @@
+apt install wget unzip
+wget https://github.com/Vertirose/auto-dns/archive/bind9.zip
+unzip bind9.zip
+cd auto-dns-bind9
+sh install.sh // atau menggunakan (chmod +x install.sh | ./install.sh)
