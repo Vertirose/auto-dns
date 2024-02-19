@@ -6,7 +6,7 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 echo "Executing commands as root..."
-sleep 10
+sleep 5
 new_repo1="deb http://deb.debian.org/debian bullseye main contrib non-free"
 new_repo2="deb http://deb.debian.org/debian bullseye-updates main contrib non-free"
 new_repo3="deb http://deb.debian.org/debian bullseye-backports main contrib non-free"
@@ -17,7 +17,6 @@ echo "$new_repo2" >> /etc/apt/sources.list
 echo "$new_repo3" >> /etc/apt/sources.list
 echo "$new_repo4" >> /etc/apt/sources.list
 apt update
-sleep 10
 echo "Hello you are using a script from Vertirose."
 sleep 5
 echo "I hope you can use this script freely and without having to think about some configurations."
