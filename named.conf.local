@@ -6,3 +6,12 @@
 // organization
 //include "/etc/bind/zones.rfc1918";
 
+zone "smkdki.net" {
+	type master;
+	file "/etc/bind/db.contoh - add";
+};
+
+zone "1.168.192.in-addr.arpa" {
+	type master;
+	file "/etc/bind/db.pointer - add";
+};
